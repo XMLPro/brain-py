@@ -36,6 +36,9 @@ class BrainFuck:
     def right(self):
         pass
     def dot(self):
+        a = self.l[self.index]
+        print(chr(a), end="")
+        #auth: tororoMeshi
         pass
     def comma(self):
         pass
