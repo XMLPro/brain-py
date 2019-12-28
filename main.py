@@ -32,24 +32,22 @@ class BrainFuck:
     def left(self):
         self.index = max(0, self.index-1)
         # auth: cl0wn
-        pass
+
     def right(self):
         self.index += 1
         # auth: yoshiyori
-        pass
+
     def dot(self):
         a = self.l[self.index]
         print(chr(a), end="")
         #auth: tororoMeshi
-        pass
+
     def comma(self):
-        pass
-
-
+        self.l[self.index] = ord(input())
+        # auth: Inazuma_110
 
 
 if __name__ == '__main__':
     fname = sys.argv[1]
     interpreter = BrainFuck(fname)
     interpreter.run()
-
