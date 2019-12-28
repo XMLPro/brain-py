@@ -34,6 +34,8 @@ class BrainFuck:
         # auth: cl0wn
         pass
     def right(self):
+        self.index += 1
+        # auth: yoshiyori
         pass
     def dot(self):
         a = self.l[self.index]
