@@ -24,8 +24,11 @@ class BrainFuck:
 
     def plus(self):
         self.l[self.index] += 1
+        # auth: 10bit
     def minus(self):
-        pass
+        if self.index >= 0:
+            self.l[self.index] -= 1
+        # auth: genzai
     def left(self):
         pass
     def right(self):
