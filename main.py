@@ -30,6 +30,8 @@ class BrainFuck:
             self.l[self.index] -= 1
         # auth: genzai
     def left(self):
+        self.index = max(0, self.index-1)
+        # auth: cl0wn
         pass
     def right(self):
         pass
