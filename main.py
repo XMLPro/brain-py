@@ -5,6 +5,7 @@ class BrainFuck:
         with open(fname, 'r') as f:
             self.source = f.read()
         self.l = [0 for i in range(10000)]
+        self.index = 0
 
     def run(self):
         for i, char in enumerate(self.source):
@@ -22,7 +23,7 @@ class BrainFuck:
                 self.comma()
 
     def plus(self):
-        pass
+        self.l[self.index] += 1
     def minus(self):
         pass
     def left(self):
